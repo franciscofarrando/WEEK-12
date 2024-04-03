@@ -12,3 +12,31 @@ const galletas = {
     precio: 2.75,
     hayExistencias: true
     };
+
+    //PRIMERA LECTURA
+    console.log(galletas)
+ 
+    //AGREGAR PROPIEDAD Y VALOR
+    galletas.oferta= true;
+
+    //MODIFICAR
+    galletas.descripción= "Galletas de lino"
+
+    //BORRAR
+
+    delete galletas.oferta;
+
+    //ULTIMA LECTURA
+
+    console.log(galletas)
+
+    // FOR IN solo valores
+    for (let x in galletas){
+        console.log("Valores: " + x)
+        }
+
+    // FOR IN solo Propiedades
+
+    for (let x in galletas){
+        console.log("Propiedades: "+ galletas[x])
+        }
