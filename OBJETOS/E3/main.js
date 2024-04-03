@@ -27,3 +27,28 @@ const coche3 = {
     precio: "$38.000",
     stock: false
 }
+
+const concesionaria = [
+    {
+    marca: "Audi", 
+    modelo: "A8", 
+    potencia: "286 cv", 
+    precio: "$115.000",
+    stock: true
+},
+{
+    marca: "Cupra", 
+    modelo: "Born", 
+    potencia: "231 cv", 
+    precio: "$38.000",
+    stock: false
+},
+{
+    marca: "Cupra", 
+    modelo: "Born", 
+    potencia: "231 cv", 
+    precio: "$38.000",
+    stock: false
+}
+
+]
