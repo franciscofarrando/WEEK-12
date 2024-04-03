@@ -28,6 +28,8 @@ const coche3 = {
     stock: false
 }
 
+
+//ARRAY DE OBJETOS
 const concesionaria = [
     {
     marca: "Audi", 
@@ -36,12 +38,12 @@ const concesionaria = [
     precio: "$115.000",
     stock: true
 },
-{
-    marca: "Cupra", 
-    modelo: "Born", 
-    potencia: "231 cv", 
-    precio: "$38.000",
-    stock: false
+ {
+    marca: "BMW", 
+    modelo: "M3", 
+    potencia: "375 cv", 
+    precio: "$124.000",
+    stock: true
 },
 {
     marca: "Cupra", 
@@ -52,3 +54,28 @@ const concesionaria = [
 }
 
 ]
+
+
+// - Con ese array de objetos, mostrar por ejemplo, todos los modelos. (opción preguntar al usuario
+// qué quiere mostrar)
+let respuesta =
+prompt("Que te gustaria ver sobre los coches?: marcas, modelos, potencias, precios, stocks? ");
+
+if (respuesta == "marcas"){
+    for (let x in concesionaria)
+    document.write(concesionaria[x].marca+ "<br>");
+}else if (respuesta == "modelos"){
+    for (let x in concesionaria)
+    document.write(concesionaria[x].modelo);
+}else if (respuesta == "potencias"){
+    for (let x in concesionaria)
+    document.write(concesionaria[x].potencia + "<br>");
+}else if (respuesta == "precios"){
+    for (let x in concesionaria)
+    document.write(concesionaria[x].precio);
+}else if (respuesta == "stocks"){
+    for (let x in concesionaria)
+    document.write(concesionaria[x].stock);
+}else{
+    alert("Sin respuesta");
+}

@@ -23,7 +23,7 @@ const ordenador1 = {
     
     }
 //FRASE
-    console.log("mi ordenador es un " +ordenador1.marca+ " , con procesador " +ordenador1.procesador+ " y "+ordenador1.ram+"de RAM");
+    console.log("mi ordenador es un " + ordenador1.marca + " , con procesador " + ordenador1.procesador + " y "+ordenador1.ram+"de RAM");
 
 
 //TODO
