@@ -63,19 +63,19 @@ prompt("Que te gustaria ver sobre los coches?: marcas, modelos, potencias, preci
 
 if (respuesta == "marcas"){
     for (let x in concesionaria)
-    document.write(concesionaria[x].marca+ "<br>");
+    document.write(concesionaria[x].marca + "<br>");
 }else if (respuesta == "modelos"){
     for (let x in concesionaria)
-    document.write(concesionaria[x].modelo);
+    document.write(concesionaria[x].modelo + "<br>");
 }else if (respuesta == "potencias"){
     for (let x in concesionaria)
     document.write(concesionaria[x].potencia + "<br>");
 }else if (respuesta == "precios"){
     for (let x in concesionaria)
-    document.write(concesionaria[x].precio);
+    document.write(concesionaria[x].precio + "<br>");
 }else if (respuesta == "stocks"){
     for (let x in concesionaria)
-    document.write(concesionaria[x].stock);
+    document.write(concesionaria[x].stock + "<br>");
 }else{
     alert("Sin respuesta");
 }
