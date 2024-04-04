@@ -5,4 +5,25 @@
 // Crear un programa para preguntar y calcular el monto total de las seis inscripciones, que debes
 // mostrar en pantalla o consola.
 
+function sumaTorneo(jugadores){
+    let totalJugadores = 0;
+    for(let i = 0; i < jugadores.length; i++) {
+        let edad = parseInt(prompt("Ingrese la edad del Jugador " + ( i + 1 ) + ":"));
+        if (edad >= 18){
+            totalJugadores += 10;
 
+        } else {
+            totalJugadores += 5;
+        }
+
+    }
+    return totalJugadores;
+    
+}
+
+const participantes = new Array(6);
+
+console.log("Edad de los Jugadores?:");
+const totalJugadores = sumaTorneo(participantes);
+
+console.log("El torneo a recaudado: €" + totalJugadores);
