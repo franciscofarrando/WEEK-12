@@ -8,7 +8,7 @@ const platosItalianos = [
     "Tiramisú"
   ];
 
-  for (i=0; i<=platosItalianos.length ; i++) {
+  for (i=0; i<platosItalianos.length ; i++) {
   
   document.write(platosItalianos[i] + "<br>") ;
   }
