@@ -5,3 +5,25 @@
 // - Cambiar el color de fondo de la página (tres colores diferentes según la respuesta)
 
 
+
+function infoCaption(){
+    let medio = document.getElementById("vehiculo").value;
+
+
+    document.getElementById("vehiculoElegido").innerHTML = medio;
+     if (medio == "bicicleta"){
+        document.getElementById("vehiculoElegido").innerHTML = "Su vehiculo elegido es: " + medio;
+     }else if (medio == "bus"){
+            document.getElementById("vehiculoElegido").innerHTML = "Su vehiculo elegido es: " + medio;
+    }else if (medio == "tram"){
+            document.getElementById("vehiculoElegido").innerHTML = "Su vehiculo elegido es: " + medio;
+    }else if (medio == "tren"){
+            document.getElementById("vehiculoElegido").innerHTML = "Su vehiculo elegido es: " + medio;
+     }else{
+       alert("Pues ve andando...");
+     }
+
+}
+
+
+  
