@@ -12,13 +12,13 @@ function infoCaption(){
 
     document.getElementById("vehiculoElegido").innerHTML = medio;
      if (medio == "bicicleta"){
-        document.getElementById("vehiculoElegido").innerHTML = "Su vehiculo elegido es: " + medio;
+        document.getElementById("vehiculoElegido").innerHTML = "Su vehiculo elegido es: " + medio + ". A peladear!!!";
      }else if (medio == "bus"){
-            document.getElementById("vehiculoElegido").innerHTML = "Su vehiculo elegido es: " + medio;
+            document.getElementById("vehiculoElegido").innerHTML = "Su vehiculo elegido es: " + medio + ", no olvides el pase";
     }else if (medio == "tram"){
-            document.getElementById("vehiculoElegido").innerHTML = "Su vehiculo elegido es: " + medio;
+            document.getElementById("vehiculoElegido").innerHTML = "Su vehiculo elegido es: " + medio + ", el medio mas bonito y tranquilo";
     }else if (medio == "tren"){
-            document.getElementById("vehiculoElegido").innerHTML = "Su vehiculo elegido es: " + medio;
+            document.getElementById("vehiculoElegido").innerHTML = "Su vehiculo elegido es: " + medio + ". Ten cuidado con los horarios";
      }else{
        alert("Pues ve andando...");
      }
