@@ -2,13 +2,15 @@
 // esos datos, e imprima en pantalla o consola un mensaje del tipo: “tu mascota es un (mascota
 // introducida por usuario) y su nombre es (nombre introducido por usuario)”. No necesita return.
 
-let nombre =
-prompt("Como se llama tu hijo de 4 patas:").toLowerCase();
+
 let raza = 
-prompt(" y de que raza es?:").toLowerCase();
+prompt(" Cual es la raza de tu hijo de 4 patas?:").toLowerCase();
+let nombre =
+prompt("Como se llama:").toLowerCase();
 
 function tuMascota(a,b){
-document.write("Tu mascota se llama " + a + " y es un/a " + b);}
+document.write("Tu mascota es un/a " + a + " y su nombre es " + b);
+    }
 
 
-tuMascota(nombre,raza);
+tuMascota(raza,nombre);
