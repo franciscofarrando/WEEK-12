@@ -5,3 +5,25 @@
 // - Imprimir en consola o pantalla el array, pero cada título en una línea diferente
 
 
+const peliculas = [];
+
+//AGREGAR
+function listaDePeliculas(){
+    pregunta=false;
+    while (pregunta==false){
+    let agregaPelicula = prompt("Agrega una pelicula:");
+    
+    if(agregaPelicula.toLowerCase() === "salir"){
+     pregunta = true;
+        
+    }else{
+        peliculas.push(agregaPelicula);
+    }
+}
+peliculas.sort();
+
+document.write("Tu listado de pelicula favoritas: ");
+peliculas.forEach(pelicula => document.write("<br>" + pelicula));
+}
+
+listaDePeliculas();
